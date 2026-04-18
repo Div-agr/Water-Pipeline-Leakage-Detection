@@ -1,0 +1,7 @@
+Water leakage in pipeline systems leads to significant resource loss, economic damage, and operational inefficiencies across domestic, industrial, and municipal sectors. This project presents a low-cost, embedded system-based solution for real-time detection and localization of pipeline leakage using dual flow sensors and an Arduino Uno microcontroller.
+
+The system operates by installing two flow sensors at the inlet and outlet of a pipeline. These sensors generate pulse signals proportional to the flow rate, which are captured using interrupt-based counting. The Arduino processes this data to compute the flow rates and continuously compares the inlet and outlet measurements. Under normal conditions, both flow values remain approximately equal. Any significant discrepancy beyond a predefined threshold indicates the presence of a leak.
+
+Upon detection, the system activates a visual alert using an LED and estimates the location of the leak using a ratio-based mathematical model derived from flow variations and pipeline length. The results, including flow rates and leak position, are displayed via the serial monitor for real-time monitoring.
+
+The proposed system is simple, cost-effective, and scalable, making it suitable for applications in smart water management, industrial pipelines, and irrigation systems. While the current implementation provides approximate localization under steady flow conditions, future enhancements such as IoT integration and multi-sensor deployment can significantly improve accuracy and enable remote monitoring capabilities.
